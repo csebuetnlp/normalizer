@@ -21,6 +21,9 @@ normalized_text = normalize(
     apply_unicode_norm_last=True  # whether to apply the unicode normalization before or after rule based replacements (default True)        
 )
 ```
+## License
+
+Contents of this repository are restricted to non-commercial research purposes only under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/). 
 
 ## Citation
 
