@@ -49,7 +49,7 @@ def normalize(
 
     # apply unicode replacements    
     text = const.UNICODE_REPLACEMENTS_REGEX.sub(
-        lambda match: const.UNICODE_REPLACEMENTS[match.group(0)], 
+        lambda match: const.UNICODE_REPLACEMENTS.get(match.group(0), f"{match.group(1)}\u09cc"), 
         text
     )
 

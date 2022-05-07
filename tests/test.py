@@ -65,12 +65,16 @@ def test_unicode_replacements():
         [
             "\u00a0",
             " "
+        ],
+        [
+            'েশৗ',
+            'শৌ'
         ]
     ]
     
     for d in data:
         normalized_text = normalize(d[0])
-        assert normalized_text == d[1]
+        assert normalized_text == d[1], f"{normalized_text} != {d[1]}" 
 
 
 
