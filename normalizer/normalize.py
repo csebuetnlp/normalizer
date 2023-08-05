@@ -29,14 +29,14 @@ def normalize(
     # normalize variations of quotes
     text = fix_quotes(text)
 
-    # replace punctuations with specified replacement (if any)
-    if punct_replacement is not None:
-        text = const.PUNCT_HANDLER_REGEX.sub(punct_replacement, text)
-        
     # replace URLS in text with specified replacement (if any)
     if url_replacement is not None:
         text = const.URL_HANDLER_REGEX.sub(url_replacement, text)
 
+    # replace punctuations with specified replacement (if any)
+    if punct_replacement is not None:
+        text = const.PUNCT_HANDLER_REGEX.sub(punct_replacement, text)
+        
     # replace emojis in text with specified replacement (if any)
     if emoji_replacement is not None:
         text = const.EMOJI_HANDLER_REGEX.sub(emoji_replacement, text)
